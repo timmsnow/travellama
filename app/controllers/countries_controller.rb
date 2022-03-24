@@ -11,4 +11,10 @@ class CountriesController < ApplicationController
     
     render json: @country
   end
+
+  def photo_paths
+    @photo_paths = Country.find(params[:id]).photo_paths.pluck(:name)
+    render json: @photo_paths
+  end
+
 end

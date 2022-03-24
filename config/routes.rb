@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  #country  
+#country  
   get '/countries' => 'countries#index'
   get '/countries/:id' => 'countries#show'
+  get '/countries/:id/photos' => 'countries#photo_paths'
   
   #destination
   get '/destinations' => 'destinations#index'   
