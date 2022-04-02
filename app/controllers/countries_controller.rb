@@ -17,4 +17,9 @@ class CountriesController < ApplicationController
     render json: @photo_paths
   end
 
+  def experiences
+    @countries = Country.find(params[:id]).experiences
+    render json: @countries
+  end
+
 end

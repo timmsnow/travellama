@@ -183,3 +183,12 @@
   # There is so much more to Peru than Machu Picchu.
   # <br /><br />
   # From the Amazon, to the deserts of Nazca, from the Sacred Valley to the deep cut canyons of Arequipa, Peru is not a country you want to rush through. Around ever corner lies a human, animal, or geologic anomaly just begging to be explored, researched, and documented. This is a country where you will see, hear, feel, and taste an energy that can’t be found anywhere else on the planet… oh and did I mention the ceviche? Because it’s insane. The ceviche, is for real. INSANE! ")
+
+  # Experience.create!(
+  #   name: 'Makgadikgadi National Park', country_id: 1
+  # )
+
+  # Post.create!(
+  #   experience_id: 1, is_system: true, body: 'Makgadikgadi is a gigantic National Park that stretches eastward from the edge of the Boteti River across the scrubland and eventually tumbles into the Ntwetwe and Sua salt pans. Even for Botswana, this park can feel quiet and remote, especially in the green season when tourist traffic drops to a trickle. Makgadikgadi is the setting for one of the biggest and best animal migrations on the planet. When the rain waters finally reach the pans at the end of the wet season, zebras come trotting by the thousands, desperate for a drink. It’s spectacular.
+  #   While the park itself is gated, and accessible with a 4 wheel drive, the neighboring salt pans are best visited with a guide since you can get easily turned around in the vast white expanse, or, in the rainy season, stuck in sinking mud without any help in sight. The pans are home to some relatively famous colonies of meerkats who seem to enjoy moderate interaction with humans. It’s the icing on top of an elephant-packed, animal-watching bonanza.'
+  # )

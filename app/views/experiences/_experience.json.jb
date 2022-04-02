@@ -1,0 +1,5 @@
+{
+  name: experience.name,
+  country_id: experience.country_id,
+  category: experience.category
+}

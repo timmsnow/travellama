@@ -1,0 +1,14 @@
+{
+  id: country.id
+  name: country.name,
+  continent: country.continent,
+  intro: country.intro,
+  experiences: country.experiences.map do |contact|
+    {
+      id: experience.id,
+      name: experience.name,
+      country_id: experience.country_id,
+      category: experience.category
+    }
+  end
+}
