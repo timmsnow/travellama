@@ -10,4 +10,9 @@ class ExperiencesController < ApplicationController
     
     render json: @experience
   end
+
+  def posts
+    @posts = Experience.find(params[:id]).posts
+    render json: @posts
+  end
 end
