@@ -10,4 +10,10 @@ class PostsController < ApplicationController
     
     render json: @posts
   end
+
+  def create
+    clean_params = params["post"].permit!
+    @post = Post.create!(clean_params)
+    render json: @post
+  end
 end

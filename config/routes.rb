@@ -15,8 +15,10 @@ Rails.application.routes.draw do
   get '/experiences' => 'experiences#index'
   get '/experiences/:id' => 'experiences#show'
   get '/experiences/:id/posts' => 'experiences#posts'
-
+  post '/experiences' => 'experiences#create'
+  
   #post  
   get '/posts' => 'posts#index'
   get '/posts/:id' => 'posts#show'
+  post '/posts' => 'posts#create'
 end

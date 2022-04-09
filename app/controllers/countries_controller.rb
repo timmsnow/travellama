@@ -18,7 +18,7 @@ class CountriesController < ApplicationController
   end
 
   def experiences
-    @countries = Country.find(params[:id]).experiences
+    @countries = Country.find(params[:id]).experiences.order(name: :asc)
     render json: @countries
   end
 
