@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_12_022511) do
+ActiveRecord::Schema.define(version: 2022_04_22_183603) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,13 @@ ActiveRecord::Schema.define(version: 2022_04_12_022511) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "experience_votes", force: :cascade do |t|
+    t.integer "experience_id"
+    t.integer "vote_cd"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "experiences", force: :cascade do |t|
     t.string "name"
     t.integer "country_id"
@@ -57,6 +64,8 @@ ActiveRecord::Schema.define(version: 2022_04_12_022511) do
     t.integer "country_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "experience_id"
+    t.integer "post_id"
   end
 
   create_table "post_tags", force: :cascade do |t|

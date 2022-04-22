@@ -19,7 +19,15 @@ class CountriesController < ApplicationController
 
   def experiences
     @countries = Country.find(params[:id]).experiences.order(name: :asc)
-    render json: @countries
+    @top5 = Country.top_rated_experiences(params[:id])
+    
+    render json: {experiences: @countries, top5: @top5 }
   end
-
+  
+  def tops
+    # require 'pry';binding.pry
+    @top5 = Country.top_rated_experiences(params[:id])
+    # @top5 = Country.find(params[:id])
+    render json: @top5
+  end
 end
