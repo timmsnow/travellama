@@ -1,5 +1,5 @@
 class ExperienceSerializer < ActiveModel::Serializer
-  attributes :id, :name, :country_id, :category
+  attributes :id, :name, :country_id, :category, :posts
   has_many :posts
   has_many :photo_paths
   has_many :experience_votes
